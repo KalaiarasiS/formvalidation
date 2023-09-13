@@ -1,0 +1,379 @@
+.form-container{
+  margin:20px 14px 0px 14px;
+  padding: 0px 0px 25px 10px;
+}
+
+.header-container
+{
+  font-size: 95%;
+  font-weight: bold;
+  color: #222;
+  line-height: 5%;
+  margin:10 10 10 20;
+  border: none;
+  display: block;
+  white-space: normal;
+  width: 100%;
+}
+
+.date-of-birth-container 
+{
+  display: flex;
+  align-items: center; 
+}
+
+.form-section 
+{
+  font-size: 75%;
+  color: #222;
+  line-height: 120%;
+  margin-left: 20px;
+  border: none;
+  display: block;
+  white-space: normal;
+  width: 57vw;
+}
+
+.formhead-section 
+{
+  font-size: 85%;
+  color: #222;
+  line-height: 120%;
+  margin-left: 20px;
+  border: none;
+  display: block;
+  white-space: normal;
+  width: 100%;
+}
+
+.form-input 
+{
+  padding: 10px;
+  width: 50px;
+  padding: 3px;
+  margin-left: 20;
+  border-top: 1px solid #7c7c7c;
+  border-left: 1px solid #c3c3c3;
+  border-right: 1px solid #c3c3c3;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
+
+.formemail-input 
+{
+  padding: 3px;
+  width: 350px;
+  padding: 3px;
+  margin-left: 20;
+  border-top: 1px solid #7c7c7c;
+  border-left: 1px solid #c3c3c3;
+  border-right: 1px solid #c3c3c3;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
+
+.formcity-input 
+{
+  padding: 3px;
+  width: 310px;
+  padding: 3px;
+  margin-left: 0;
+  border-top: 1px solid #7c7c7c;
+  border-left: 1px solid #c3c3c3;
+  border-right: 1px solid #c3c3c3;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
+
+.formadd-input
+{
+  padding: 3px;
+  width: 650px;
+  padding: 3px;
+  margin-left: 20;
+  border-top: 1px solid #7c7c7c;
+  border-left: 1px solid #c3c3c3;
+  border-right: 1px solid #c3c3c3;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
+
+.form-last-input 
+{
+  padding: 3px;
+  width: 100px;
+  margin: 0 0.3em 0 0;
+  padding: 3px;
+  border-top: 1px solid #7c7c7c;
+  border-left: 1px solid #c3c3c3;
+  border-right: 1px solid #c3c3c3;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
+
+.other-form
+{
+  padding: 3px;
+  width: 150px;
+  margin: 0 0.3em 0 0;
+  padding: 0;
+  border-top: 1px solid #7c7c7c;
+  border-left: 1px solid #c3c3c3;
+  border-right: 1px solid #c3c3c3;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
+
+.form-select 
+{
+  padding: 3px;
+  width: 80%;
+  margin-left: 20;
+}
+
+body 
+{
+  background-color: #eedddd;
+}
+
+.container 
+{
+  background-color: #DEDEDE;
+  width: 800px;
+  height: 500px;
+  margin-left: 250px;
+  margin-top: 25px;
+  margin-bottom: 60px;
+}
+
+.content 
+{
+  font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+  letter-spacing: .01em;
+  background-color: rgb(255, 255, 255);
+  width: 783px;
+  height: 1650px;
+  display: inline-block;
+  clear: both;
+  margin: 0 0 5px 0;
+  padding: 0 1% 1.1em 1%;
+  border-bottom: 1px dotted #ccc;
+}
+
+hr {
+  border: none;
+  margin-left: 20px;
+  border-top: 1px dotted rgb(79, 79, 79);
+}
+
+.child-info-header 
+{
+  margin-inline-start: 0.5cm;
+}
+
+.gender
+{
+  padding-left: 17px;
+}
+
+.grade-container 
+{
+  font-size: 75%;
+  font-weight: bold;
+  color: #222;
+  line-height: 10%;
+  margin-left: 20;
+  padding:3px ;
+  border: none;
+  display: block;
+  white-space: normal;
+  width: 50%;
+}
+
+.gradein-container 
+{
+  padding: 3px;
+  width: 43%;
+  padding: 3px;
+  margin-left: 20px;
+  color: #444;
+}
+
+.address-container 
+{
+  margin-inline-start: 0.5cm;
+}
+
+.address-input 
+{
+  padding: 2px;
+  width: 150px;
+}
+
+.city-state-container 
+{
+  display: flex;
+  align-items: center;
+}
+
+.city-container {
+  padding: 3px;
+  width: 50px;
+  padding: 0;
+  margin-left: 10;
+  color: #444;
+  margin-inline-start: 0.5cm;
+}
+
+.state-container {
+  margin-left: 290px;
+}
+
+.medical-info-header {
+  margin-inline-start: 0.5cm;
+}
+
+.medical-info-container {
+  display: inline-flex;
+}
+
+.medical-info-section {
+  font-size: 75%;
+  font-weight: normal;
+  color: #222;
+  line-height: 150%;
+  margin: 0.5px;
+  padding: 0 0 3px 0;
+  border: none;
+  display: block;
+  white-space: normal;
+  width: 57vw;
+}
+
+.medical-info-section:last-child {
+  margin-inline-end: 0.5cm;
+}
+
+.medical-info-input {
+  padding: 2px;
+}
+
+textarea {
+  padding: 50px;
+  width: 300px;
+}
+
+.one{
+  font-size: 95%;
+  font-weight: bold;
+  color: #222;
+  line-height: 150%;
+  margin: 0;
+  padding: 0 0 3px 0;
+  border: none;
+  display: block;
+  white-space: normal;
+  width: 100%;
+}
+
+.colour{
+  background: #f4f4f0;
+}
+
+.medical-box
+{
+  width: 596px;
+  height: 200px;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.info div {
+  font-size: 95%;
+  line-height: 135%;
+  color: #555;
+}
+
+.changecolorcontainer {
+  background-color: FFFFFF;
+  margin: 0;
+  padding-left: 20px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.hovered {
+  background-color: #f3f3b4; 
+  transition: background-color 0.5s ease-in-out;
+  width: 57vw;
+}
+
+.date-md{
+  border-top: 1px solid #121212;
+  border-left: 1px solid #070707;
+  border-right: 1px solid #0a0a0a;
+  border-bottom: 1px solid #070707;
+  width: 24px;
+  background: #fff;
+  text-align: center
+}
+
+.date-y{
+  border-top: 1px solid #080808;
+  border-left: 1px solid #0e0e0e;
+  border-right: 1px solid #0b0b0b;
+  border-bottom: 1px solid #0d0c0c;
+  width: 38px;
+  background: #fff;
+  text-align: center
+}
+
+.mainheading
+{
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+  letter-spacing: .02em;
+  font-weight: normal;
+  font-size: 160%;
+  margin-left:20px;
+  margin-top: 30px;
+  clear: left;
+}
+
+.medical-clr
+{
+  background-color: FFFFFF;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.add-words{
+  font-size: 85%;
+  line-height: 160%;
+  color: #444;
+  display: block;
+  margin-left: 20px;
+}
+
+.name-words
+{
+  font-size: 95%;
+  line-height: 160%;
+  color: #444;
+  display: block;
+  margin-left: 20px;
+}
+
+.city-words{
+  font-size: 85%;
+  line-height: 160%;
+  color: #444;
+  display: block;
+}
+
+textarea {
+  padding: 50px;
+  width: 740px;
+}
+
+.buttons{
+  margin-left: 20px;
+}

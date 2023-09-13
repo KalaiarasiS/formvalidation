@@ -1,0 +1,213 @@
+<html>
+<head>
+  <title>Student details</title>
+  <link rel="stylesheet" href="style.css">  
+  <script src="script.js"></script> 
+</head>
+<body>
+  <form class="container" id="myform" onsubmit="return validateForm();">
+    <div class="content">
+      <div class="mainheading">Student Details</div>
+        <br>
+        <hr>
+        <div class="formhead-section">
+          <div class="child-info-header ">Child Information</div><br>
+        </div>
+        <div class="medical-info-container child-info-header">
+          <div class="medical-info-section child-info-header">
+            <div id="01" >
+              <br>
+              <div class="header-container">Name</div>
+              <input class="form-input" type="text" maxlength="20" id="name1" >
+              <input class="form-last-input" type="text" maxlength="20" id="name2" >
+              <div class="name-words">First &emsp;&emsp;&emsp;Last</div>
+              <p class="error name-error"></p>
+            </div><br>
+            <div class="gender" ><b>Gender</b><br>
+              <input type="radio" name="gender" id="male" value="Male" /><span>Male</span>
+              <input type="radio" name="gender" id="female" value="Female" /><span>Female</span>
+              <p class="error gender-error"></p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="medical-info-container child-info-header">
+          <div class="medical-info-section">
+            <div id="02">
+            <br>
+            <div class="header-container">Birth Date</div>
+            <div class="form-section">
+              <span class="smallpad"></span>
+              <input class="date-md" type="number"  maxlength="2" size="2" autocomplete="off"
+              oninput="moveToNextInput('day', 'month')" 
+              id="day">
+              <span>/</span>
+              <input class="date-md" type="number"  maxlength="2" size="2" autocomplete="off"
+              oninput="moveToNextInput('month', 'year')" 
+              id="month" >
+              <span>/</span>
+              <input class="date-y" type="number"  maxlength="4" size="4" autocomplete="off"
+              id="year" >
+              <br><br>
+              <label class="smalltext" for="dob">DD&emsp;&emsp;</label> 
+              <label class="smalltext" for="dob">MM&emsp;&emsp;</label> 
+              <label class="smalltext" for="dob">YYYY</label>
+            </div>
+            <p class="error birthdate-error"></p>
+            </div><br>
+          </div>
+        </div>
+        <div class="grade-container">
+          <div id="03">
+          
+          <div class="header-container">Grade</div>
+          <br>
+          <select class="form-select" name="dept" id="dept">
+            <option value="">select</option>
+            <option value="1">CSE</option>
+            <option value="2">EEE</option>
+            <option value="3">ECE</option>
+            <option value="4">IT</option>
+            <option value="5">CIVIL</option>
+            <option value="6">AI-DS</option>
+            <option value="7">CS</option>
+          </select>
+          </div>
+        </div>
+        <div class="form-section">
+          <div id="04" class="medical-clr">
+          <br>
+          <div class="header-container">Name of the college</div>
+          <input class="gradein-container other-form" type="text" id="SN">
+          </div>
+        </div>
+        <br>
+        <hr>
+        <div class="formhead-section">
+          <div class="child-info-header">Parent/Gaurdian Information</div>
+        </div>
+        <div class="medical-info-container child-info-header">
+          <div class="medical-info-section child-info-header">
+            <div id="05">
+            <br>
+            <div class="header-container">Name</div>
+            <input class="form-input" type="text" maxlength="20" id="parentname1">
+            <input class="form-last-input" type="text" maxlength="20" id="parentname2">
+            <br>
+            <div class="name-words">First &emsp;&emsp;&emsp;Last</div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="form-section">
+          <div id="06">
+            <br>
+            <div class="header-container">Address</div>
+            <input class="formadd-input" type="text"  id="streetadd">
+            <br>
+            <div class="add-words">Street Address</div>
+            <br><br>
+            <input class="formadd-input" type="text" id="addline2">
+            <br>
+            <div class="add-words">Address Line 2</div>
+            <br>
+            <div class="city-state-container">
+              <div class="city-container">
+                <input class="formcity-input" type="text"  id="city">
+                <div class="city-words">city</div>
+              </div>
+              <div class="state-container">
+                <input class="formcity-input" type="text"  id="state">
+                <div class="city-words">State/Province/Region</div>
+              </div>
+            </div>
+            <br>
+            <div class="city-state-container">
+              <div class="city-container">
+                <input class="formcity-input" type="number" id="postal">
+                <div class="city-words">postal/zip</div>
+              </div>
+              <div class="state-container">
+                <input class="formcity-input" type="text" id="country">
+                <div class="city-words">Country</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="medical-info-container child-info-header">
+          <div class="medical-info-section">
+            <div id="02">
+              <br>
+              <div class="header-container">Phone Number</div>
+              <div class="form-section">
+                <div id="07">
+                <br>
+                <input class="date-md" type="number" id="med-phone1" maxlength="3" size="4"  oninput="moveToNextBox(this, 'med-phone2')" >&emsp;-&emsp;
+                <input class="date-md" type="number" id="med-phone2" maxlength="3" size="4" oninput="moveToNextBox(this, 'med-phone3')" >&emsp;-&emsp;
+                <input class="date-md" type="number" id="med-phone3" maxlength="4" size="4" >
+                <i class="fa fa-calendar"></i>
+                <p>###&emsp;&emsp;&emsp;&emsp;###&emsp;&emsp;&emsp;####</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-section">
+          <div id="08" class="medical-clr">
+          <br>
+          <div class="header-container">Email</div>
+          <input class="formemail-input" type="email" id="email">
+          </div>
+        </div>
+        <br>
+        <hr>
+        <div class="formhead-section">
+          <div class="medical-info-header">Medical Information</div>
+        </div>
+        <div class="medical-info-container child-info-header">
+          <div class="medical-info-section child-info-header">
+            <div id="09">
+              <br>
+              <div class="header-container">Name</div>
+              <input class="form-input" type="text" id="medicalname1">
+              <input class="form-last-input" type="text" id="medicalname2">
+              <br>
+              <div class="name-words">First &emsp;&emsp;&emsp;Last</div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="medical-info-container child-info-header">
+          <div class="medical-info-section">
+            <div id="10">
+              <br>
+              <div class="header-container">Phone Number</div>
+              <div class="form-section">
+                <div id="07">
+                <br>
+                <input class="date-md" type="number" id="med-phone01" maxlength="3" size="4" oninput="moveToNextBox(this, 'med-phone02')" >&emsp;-&emsp;
+                <input class="date-md" type="number" id="med-phone02" maxlength="3" size="4" oninput="moveToNextBox(this, 'med-phone03')" >&emsp;-&emsp;
+                <input class="date-md" type="number" id="med-phone03" maxlength="4" size="4" >
+                <i class="fa fa-calendar"></i>
+                <p>###&emsp;&emsp;&emsp;&emsp;###&emsp;&emsp;&emsp;####</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="medical-info-container child-info-header">
+          <div class="medical-info-section child-info-header ">
+            <div id="11" class="medical-clr">
+              <br>
+              <div class="header-container ">Medical Concerns</div> 
+              <textarea row="10" cols="40" min-height="99%" max-height="99%"  id="lastBox"></textarea>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <button type="submit" class="buttons">submit</button>
+      </div>
+    </div>
+  </form>
+</body>
+</html>
